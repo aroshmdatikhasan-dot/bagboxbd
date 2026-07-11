@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAG BOX BD</title>
     <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; text-align: center; }
+        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #fdf5e6; text-align: center; }
         .top-banner { background: #333; color: #ffcc00; padding: 10px; font-size: 14px; }
         .header { background: #fff; padding: 20px; border-bottom: 2px solid #ddd; }
-        .main-container { max-width: 500px; margin: 20px auto; background: #fff; padding: 20px; border: 1px solid #ddd; }
+        .main-container { max-width: 500px; margin: 20px auto; background: #ffffff; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
         .product-info { display: flex; text-align: left; gap: 15px; margin: 20px 0; }
         .product-img { width: 150px; height: 150px; object-fit: cover; border: 1px solid #ccc; }
         .order-box { border: 2px dashed #ccc; padding: 20px; text-align: left; }
-        input, select, textarea { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc; box-sizing: border-box; }
-        .submit-btn { background: #a52a2a; color: #fff; padding: 15px; width: 100%; border: none; font-weight: bold; cursor: pointer; }
+        input, textarea { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc; box-sizing: border-box; }
+        .submit-btn { background: #28a745; color: #fff; padding: 10px 20px; border: none; font-weight: bold; cursor: pointer; border-radius: 5px; display: block; margin: 10px auto; }
         .footer { background: #222; color: #777; padding: 20px; font-size: 12px; }
     </style>
 </head>
@@ -29,8 +29,7 @@
     <div class="main-container">
         <h2>আপনার প্রতিদিনের স্টাইলে আনুন আভিজাত্যের ছোঁয়া!</h2>
         <div class="product-info">
-            <!-- এখানে আপনার ছবির লিংকটি বসান -->
-            <img src="https://www.facebook.com/share/p/1CWTJk6BB9/" class="product-img" alt="Bag">
+            <img src="YOUR_IMAGE_URL" class="product-img" alt="Bag">
             <div>
                 <h3>৳ ১,৪৯০ <del>৳ ২,৮৫০</del></h3>
                 <ul>
@@ -43,16 +42,11 @@
 
         <div class="order-box">
             <h3>🛒 অর্ডার করতে নিচের ফর্মটি পূরণ করুন</h3>
-            <!-- গুগল ফর্মের লিংকটি এখানে বসালে আপনার ওয়েবসাইট থেকেই অর্ডার নেওয়া যাবে -->
             <form action="YOUR_GOOGLE_FORM_ACTION_URL" method="POST">
                 <input type="text" name="name" placeholder="আপনার নাম" required>
                 <input type="text" name="phone" placeholder="মোবাইল নাম্বার" required>
                 <textarea name="address" placeholder="সম্পূর্ণ ঠিকানা" required></textarea>
-                <select>
-                    <option>ঢাকার ভিতরে (ডেলিভারি ফ্রি)</option>
-                    <option>ঢাকার বাইরে (ডেলিভারি ফ্রি)</option>
-                </select>
-                <button type="submit" class="submit-btn">👇 অর্ডার কনফার্ম করতে এখানে ক্লিক করুন 👇</button>
+                <button type="submit" class="submit-btn">অর্ডার করুন</button>
             </form>
         </div>
     </div>
