@@ -3,19 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BAG BOX BD - অর্ডার করুন</title>
+    <title>BAG BOX BD - Luxury Collection</title>
     <style>
-        body { font-family: sans-serif; text-align: center; background-color: #f4f4f4; padding: 10px; }
-        .box { background: #fff; padding: 15px; border-radius: 10px; max-width: 500px; margin: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .form-container { width: 100%; height: 800px; border: none; }
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; text-align: center; }
+        .top-bar { background: #000; color: #ffcc00; padding: 10px; font-size: 14px; }
+        .header { background: #fff; padding: 20px; }
+        .container { max-width: 500px; margin: auto; background: #fff; padding: 20px; }
+        .product-section { display: flex; gap: 15px; margin: 20px 0; text-align: left; }
+        .product-img { width: 150px; height: 150px; background: #333; display: flex; align-items: center; justify-content: center; color: #fff; }
+        .order-form { border: 2px dashed #ccc; padding: 20px; margin-top: 20px; text-align: left; }
+        input, textarea, select { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; box-sizing: border-box; }
+        .btn { background: #b22222; color: #fff; padding: 15px; border: none; width: 100%; font-size: 18px; cursor: pointer; }
     </style>
 </head>
 <body>
 
-    <div class="box">
+    <div class="top-bar">🔥 স্টক সীমিত! আজ অর্ডার করলেই সারা বাংলাদেশে ক্যাশ অন ডেলিভারি ফ্রি!</div>
+    
+    <div class="header">
         <h1>BAG BOX BD</h1>
-        <p>অর্ডার করতে নিচের ফর্মটি পূরণ করুন:</p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevFoFfr8cQLtkbF-gS6wvhgW6ubqndsveMn4US0AhNYtuMeQ/viewform?embedded=true" class="form-container">লোড হচ্ছে...</iframe>
+        <p>LUXURY PREMIUM HANDBAG COLLECTION</p>
+    </div>
+
+    <div class="container">
+        <h2>আপনার প্রতিদিনের স্টাইলে আনুন আভিজাত্যের ছোঁয়া!</h2>
+        <p>প্রিমিয়াম কোয়ালিটি এবং আধুনিক ডিজাইনের লেডিস সাইড ব্যাগ...</p>
+
+        <div class="product-section">
+            <div class="product-img">[ছবি]</div>
+            <div>
+                <h3>৳ ১,৪৯০ <del>৳ ২,৮৫০</del></h3>
+                <ul>
+                    <li>হাই-কোয়ালিটি লেদার ফিনিশিং</li>
+                    <li>স্মার্ট স্পেস ম্যানেজমেন্ট</li>
+                    <li>প্রিমিয়াম মেটাল চেইন</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="order-form">
+            <h3>🛒 অর্ডার করতে নিচের ফর্মটি পূরণ করুন</h3>
+            <form action="YOUR_GOOGLE_FORM_ACTION_URL" method="POST">
+                <input type="text" name="name" placeholder="আপনার সম্পূর্ণ নাম" required>
+                <input type="tel" name="phone" placeholder="মোবাইল নাম্বার" required>
+                <textarea name="address" placeholder="সম্পূর্ণ ঠিকানা" required></textarea>
+                <select name="delivery">
+                    <option>ঢাকার ভিতরে (ডেলিভারি ফ্রি)</option>
+                    <option>ঢাকার বাইরে (ডেলিভারি ফ্রি)</option>
+                </select>
+                <button type="submit" class="btn">👇 অর্ডার কনফার্ম করতে এখানে ক্লিক করুন 👇</button>
+            </form>
+        </div>
     </div>
 
 </body>
